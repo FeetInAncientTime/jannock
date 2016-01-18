@@ -1,11 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.sinefine.util.pdf;
-
-import static org.apache.pdfbox.io.IOUtils.closeQuietly;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -17,8 +10,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
- *
- * @author Roger
+ * This class contains tests for the {@code Pdfs} class.
  */
 public class PdfsTest {
     
@@ -43,21 +35,15 @@ public class PdfsTest {
 
     @Test
     public void testIdenticalPdfsAreEqual() throws IOException {
-        assertTrue("These PDF files are identical!", areEqual("test001.pdf"));
+      assertTrue("These PDF files are not equal!", areEqual("test001.pdf"));
     }
     
     private static boolean areEqual(final String resourceName) 
             throws IOException {
-        InputStream actual = null;
-        InputStream expected = null;
-        try {
-            actual = getResource("actual/" + resourceName);
-            expected = getResource("expected/" + resourceName);
-            return Pdfs.areEqual(actual, expected);
-        } finally {
-            closeQuietly(actual);
-            closeQuietly(expected);            
-        }
+      try (InputStream actual = getResource("actual/" + resourceName);
+          InputStream expected = getResource("expected/" + resourceName)) {
+        return Pdfs.areEqual(actual, expected);
+      }
     }
     
     private static InputStream getResource(final String resourceName) {

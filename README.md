@@ -47,7 +47,22 @@ can be used to download and build the application:
 
 ## Using Jannock
 
-TODO...
+Jannock is intended to be used in unit tests.  A simple, but incomplete example 
+for JUnit is shown below:
+
+```java
+    import static org.junit.Assert.assertTrue;
+
+    public class FooTest {
+    
+      public void testBar() {
+        final byte[] actual = ...
+        final byte[] expected = ...
+        assertTrue("The test PDF files do not match!",
+                   Pdfs.areEqual(actual,expected));
+      }
+    }
+```
 
 ## Configuration
 
