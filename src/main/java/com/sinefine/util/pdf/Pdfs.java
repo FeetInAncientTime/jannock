@@ -49,7 +49,7 @@ public final class Pdfs {
    */
   private static final Logger LOGGER = LoggerFactory.getLogger(Pdfs.class);
 
-  private static String DEFAULT_CHARSET = "ISO-8859-1";
+  private static final String DEFAULT_CHARSET = "ISO-8859-1";
 
   /**
    * The {@code Configuration} class represents the configuration to be used by methods of the
