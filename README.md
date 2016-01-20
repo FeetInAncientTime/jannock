@@ -1,4 +1,4 @@
-# Jannock: PDF Comparison Tools
+# Jannock: PDF Comparison Tools [![Build Status](https://travis-ci.org/FeetInAncientTime/jannock.svg)](https://travis-ci.org/FeetInAncientTime/jannock)
 
 ## Introduction
 
