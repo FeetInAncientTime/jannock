@@ -72,3 +72,9 @@ TODO...
 
 Further documentation is available at the project's 
 [homepage](http://www.sinefine.com/software/jannock).
+
+## License
+
+Jannock is licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+
+For additional information, see the LICENSE.
