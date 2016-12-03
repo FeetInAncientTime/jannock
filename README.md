@@ -40,7 +40,7 @@ are installed and are on the operating system's path then the following commands
 can be used to download and build the application:
 
 ```
-    host$ git clone https://github.com/jannock/jannock.git
+    host$ git clone https://github.com/FeetInAncientTime/jannock.git
     host$ cd jannock
     host$ mvn install
 ```
