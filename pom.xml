@@ -33,7 +33,7 @@
         <java.target>1.8</java.target>
         <java.version>1.8</java.version>
         <slf4j.version>1.7.10</slf4j.version>
-        <pdfbox.version>1.8.1</pdfbox.version>
+        <pdfbox.version>1.8.16</pdfbox.version>
         <junit.version>4.10</junit.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
